@@ -1,6 +1,8 @@
 """Brute-force reference implementation of the fixed-radius estimators, for
 small catalogues: every distance is computed directly and every formula is
 written out, without cell lists, chunks or cumulative shells."""
+import math
+
 import numpy as np
 from scipy.special import digamma, gammaln
 
@@ -143,7 +145,7 @@ def renyi_reference(data, u, radii, q, box=None, randoms=None, rw=None, r_min=()
                             lms = -s * lmu
                         isint = abs(s - round(s)) < 1e-12 and round(s) >= 1
                         if not unit and correction == 'grassberger' and isint:
-                            T = np.math.factorial(int(round(s))) * _esym(uN, int(round(s)))
+                            T = math.factorial(int(round(s))) * _esym(uN, int(round(s)))
                         else:
                             T = np.exp(s * lc) * _falling(neff, s)
                         val, dv = 0.0, 1.0
