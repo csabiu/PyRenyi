@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrenyi"
+version = "0.1.0"
+description = "Renyi generalised dimensions D_q of point distributions, for periodic boxes and surveys with randoms and weights"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Cristiano G. Sabiu"}]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "numba>=0.55",
+    "tomli>=1.1; python_version<'3.11'",
+]
+keywords = ["multifractal", "generalised dimensions", "Renyi entropy", "large-scale structure",
+            "galaxy clustering", "point processes", "cosmology"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.optional-dependencies]
+fits = ["astropy>=4.0"]
+hdf5 = ["h5py>=3.0"]
+test = ["pytest>=6", "astropy>=4.0", "h5py>=3.0"]
+all = ["astropy>=4.0", "h5py>=3.0", "matplotlib>=3.3"]
+
+[project.scripts]
+pyrenyi = "pyrenyi.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/csabiu/PyRenyi"
+Issues = "https://github.com/csabiu/PyRenyi/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

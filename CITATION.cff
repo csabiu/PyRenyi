@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below and the software."
+title: "PyRenyi: Renyi generalised dimensions of point distributions"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/csabiu/PyRenyi"
+authors:
+  - family-names: Sabiu
+    given-names: Cristiano G.
+    affiliation: University of Seoul
+keywords:
+  - multifractal
+  - generalised dimensions
+  - large-scale structure
+  - cosmology
+preferred-citation:
+  type: article
+  title: "Cosmological Information in the Rényi Generalised Dimensions of the Large-Scale Distribution of Haloes and Galaxies"
+  authors:
+    - family-names: Sabiu
+      given-names: Cristiano G.
+  journal: "Journal of the Korean Astronomical Society"
+  year: 2026
+  notes: "Submitted"
