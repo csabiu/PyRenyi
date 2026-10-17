@@ -102,8 +102,10 @@ res.save('dq.npz')
 res = pyrenyi.load('dq.npz')
 ```
 
-`examples/periodic_box.py` and `examples/survey.py` are complete, runnable
-examples. The survey example builds a mock survey with a radial selection and
+`examples/cascade_dq.ipynb` is a notebook that samples a multiplicative cascade,
+measures $D_q$ with both estimators and plots it against the exact curve (it
+needs matplotlib). `examples/periodic_box.py` and `examples/survey.py` are
+complete, runnable scripts. The survey example builds a mock survey with a radial selection and
 an angular completeness, and recovers the exact $D_q$ of the underlying cascade
 within the errors. The fixed-radius estimator does so at $q < 1$ only where the
 spheres are well occupied.
