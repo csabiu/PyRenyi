@@ -28,7 +28,8 @@ Finite-sample corrections (`correction`):
                n_eff = (sum u)^2 / sum u^2 and c = sum u^2 / sum u (identical to
                'grassberger' for unit weights).
 'none'         T_s = (sum u)^s; point-centred with the centre included (the
-               sandbox estimator), so that n = 0 does not occur.
+               sandbox estimator of Sabiu, Teodoro & Hendry 2007, Nuovo
+               Cimento B 122, 1289), so that n = 0 does not occur.
 """
 import math
 import warnings

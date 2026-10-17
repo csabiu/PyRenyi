@@ -144,7 +144,7 @@ $\lambda$, $\langle n^s \rangle \neq \lambda^s$. With `correction='grassberger'`
   count $n_\text{eff} = (\sum u)^2 / \sum u^2$, scaled by $\sum u^2 / \sum u$.
 
 `'effective'` uses the last form for every $q$, and `'none'` the plain powers with
-the centre included (the sandbox estimator).
+the centre included (the sandbox estimator of Sabiu, Teodoro & Hendry 2007).
 
 For $q < 1$ the correction is not exact: at mean counts of a few, the
 point-centred moments of the emptiest spheres are biased low (for a Poisson
@@ -344,6 +344,9 @@ If you use PyRenyi, please cite
 
 and, for the methods,
 
+* C. G. Sabiu, L. F. A. Teodoro & M. A. Hendry (2007), *Resolving the universe
+  with multifractals*, Nuovo Cimento B 122, 1289 (arXiv:0803.3212), for the
+  point-centred (sandbox) estimator;
 * P. Grassberger (1988), Phys. Lett. A 128, 369 and (2003),
   arXiv:physics/0307138, for the finite-sample correction;
 * W. van de Water & P. Schram (1988), Phys. Rev. A 37, 3118, for the
